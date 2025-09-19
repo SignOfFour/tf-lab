@@ -10,7 +10,7 @@ terraform {
   }
 }
 
-resource "google_compute_network" "example_vpc1" {
+resource "google_compute_network" "example_vpc" {
   name                    = "example-vpc1"
   auto_create_subnetworks = true  # Automatically creates subnets for all regions
 }

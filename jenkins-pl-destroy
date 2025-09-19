@@ -36,6 +36,7 @@ pipeline {
                     export GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_CLOUD_KEYFILE_JSON
                     terraform destroy -auto-approve -lock=false
                     '''
+                    }
                 }
             }
         }

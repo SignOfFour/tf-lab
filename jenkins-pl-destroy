@@ -31,7 +31,7 @@ pipeline {
                 withCredentials([file(credentialsId: 'gcp-svc-acct', variable: 'GOOGLE_CLOUD_KEYFILE_JSON')]) {
                     sh '''
                     export GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_CLOUD_KEYFILE_JSON
-                    terraform destroy
+                    terraform destroy -auto-approve
                     '''
                 }
             }
